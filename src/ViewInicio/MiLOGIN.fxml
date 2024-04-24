@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewLoginController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0">
+         <children>
+            <ImageView fitHeight="287.0" fitWidth="390.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Rectangle%201.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b1b1b" height="558.0" layoutY="287.0" stroke="BLACK" strokeType="INSIDE" width="390.0" />
+            <Text fill="WHITE" layoutX="16.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de sesión">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="22.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicia sesión con tu cuenta de" />
+            <Text fill="WHITE" layoutX="182.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GamingDX">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtEmail" layoutX="30.0" layoutY="472.0" onKeyTyped="#eventKey" prefHeight="40.0" prefWidth="234.0" promptText="Ingresa tu correo" />
+            <Text fill="WHITE" layoutX="30.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtPassword" layoutX="30.0" layoutY="590.0" onKeyTyped="#eventKey" prefHeight="40.0" prefWidth="234.0" promptText="ingresa tu contraseña" />
+            <Button fx:id="btnLogin" layoutX="41.0" layoutY="682.0" mnemonicParsing="false" onAction="#eventAction" prefHeight="47.0" prefWidth="310.0" text="Iniciar Sesión">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff14b1" />
+                        <Stop color="#eb06fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Text fill="#fffefe" layoutX="120.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No tienes una cuenta? " />
+            <Button cache="true" layoutX="243.0" layoutY="772.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="Registrate" textFill="#000000b4" underline="true" AnchorPane.topAnchor="772.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
