@@ -41,7 +41,9 @@ public class ViewLoginController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
+public void CloseWindows(){
+    
+}
     
     
 }
