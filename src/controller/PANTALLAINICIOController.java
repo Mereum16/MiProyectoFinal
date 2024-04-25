@@ -10,38 +10,28 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.input.KeyEvent;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
+
 /**
  * FXML Controller class
  *
  * @author Miguel Angel
  */
-public class ViewLoginController implements Initializable {
-
+public class PANTALLAINICIOController implements Initializable {
+    
+    private ViewLoginController controllerViewLogin;
+    private Stage stage;
     @FXML
-    private TextField txtUser;
+    private Button btnCompra;
     @FXML
-    private TextField txtPassword;
-    @FXML
-    private Button btnLogin;
-
-    @FXML
-    private void eventKey(KeyEvent event) {
-    }
-
-    @FXML
-    private void eventAction(ActionEvent event) {
-    }
+    private Label lblUser;
     /**
      * Initializes the controller class.
      */
@@ -50,30 +40,43 @@ public class ViewLoginController implements Initializable {
         // TODO
     }    
      @FXML
-    private void ShowInicio(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/PANTALLAINICIO.fxml"));
+    void ShowCompra(ActionEvent event) {
+      try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Compra.fxml"));
             Parent root = loader.load();
             
-            PANTALLAINICIOController controller = loader.getController();
+            CompraController controller = loader.getController();
             
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             
             stage.setScene(scene);
+            
             stage.show();
+            
             
             stage.setOnCloseRequest(e -> controller.CloseWindows());
             
-            Stage myStage = (Stage) this.btnLogin.getScene().getWindow();
-            controller.initialize(txtUser.getText(), stage, this);
+            Stage myStage = (Stage) this.btnCompra.getScene().getWindow();
+            
             myStage.close();
                     
         } catch (IOException ex) {
-            Logger.getLogger(PANTALLAINICIOController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CompraController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    public void CloseWindows(){
+    
+public void CloseWindows(){
         
     }
+    void initialize(String text, Stage stage, ViewLoginController aThis) {
+       lblUser.setText(text);
+       this.controllerViewLogin = aThis;
+        this.stage = stage;
+        
+        
+        
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
 }

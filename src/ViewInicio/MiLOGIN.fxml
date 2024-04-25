@@ -34,19 +34,19 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="30.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+            <Text fill="WHITE" layoutX="30.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Text>
-            <TextField fx:id="txtEmail" layoutX="30.0" layoutY="472.0" onKeyTyped="#eventKey" prefHeight="40.0" prefWidth="234.0" promptText="Ingresa tu correo" />
+            <TextField fx:id="txtUser" layoutX="30.0" layoutY="472.0" onKeyTyped="#eventKey" prefHeight="40.0" prefWidth="234.0" promptText="Ingresa tu correo" />
             <Text fill="WHITE" layoutX="30.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Text>
             <TextField fx:id="txtPassword" layoutX="30.0" layoutY="590.0" onKeyTyped="#eventKey" prefHeight="40.0" prefWidth="234.0" promptText="ingresa tu contraseña" />
-            <Button fx:id="btnLogin" layoutX="41.0" layoutY="682.0" mnemonicParsing="false" onAction="#eventAction" prefHeight="47.0" prefWidth="310.0" text="Iniciar Sesión">
+            <Button fx:id="btnLogin" layoutX="41.0" layoutY="682.0" mnemonicParsing="false" onAction="#ShowInicio" prefHeight="47.0" prefWidth="310.0" text="Iniciar Sesión">
                <textFill>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>

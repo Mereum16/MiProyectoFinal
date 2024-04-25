@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author Miguel Angel
  */
-public class INICIOController implements Initializable {
+public class CompraController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -22,5 +22,7 @@ public class INICIOController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
+    public void CloseWindows(){
+        
+    }
 }
