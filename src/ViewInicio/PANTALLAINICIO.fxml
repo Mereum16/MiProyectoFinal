@@ -13,9 +13,9 @@
 
 <HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PANTALLAINICIOController">
    <children>
-      <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0">
+      <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b1b1b" height="844.0" layoutY="-1.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="390.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b1b1b" height="844.0" layoutY="-1.0" smooth="false" stroke="BLACK" strokeType="INSIDE" visible="false" width="390.0" />
             <ImageView fitHeight="94.0" fitWidth="390.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true">
                <image>
                   <Image url="@../images/Rectangle%2014.png" />
@@ -32,12 +32,12 @@
                   <Image url="@../images/Vector-1.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="266.0" layoutY="36.0" pickOnBounds="true">
+            <ImageView fx:id="Lupa" fitHeight="20.0" fitWidth="25.0" layoutX="266.0" layoutY="36.0" onMouseClicked="#Buscar" pickOnBounds="true">
                <image>
                   <Image url="@../images/Vector(1).png" />
                </image>
             </ImageView>
-            <Button fx:id="btnCompra" layoutX="151.0" layoutY="735.0" mnemonicParsing="false" onAction="#ShowCompra" prefHeight="37.0" prefWidth="75.0" text="COMPRAR" textFill="RED" wrapText="true" />
+            <Button fx:id="btnCompra" layoutX="57.0" layoutY="610.0" mnemonicParsing="false" onAction="#ShowCompra" prefHeight="13.0" prefWidth="82.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="COMPRAR" textFill="RED" wrapText="true" />
             <ImageView fitHeight="196.0" fitWidth="324.0" layoutX="32.0" layoutY="199.0" pickOnBounds="true">
                <image>
                   <Image url="@../images/Rectangle%207.png" />
@@ -74,7 +74,7 @@
                </image>
             </ImageView>
             <Text fill="WHITE" layoutX="105.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envio gratis en millones de productos" />
-            <ImageView fitHeight="196.0" fitWidth="230.0" layoutX="81.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="94.0" fitWidth="119.0" layoutX="41.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/Rectangle%208.png" />
                </image>
@@ -84,6 +84,44 @@
                   <Image url="@../images/User2.png" />
                </image>
             </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="119.0" layoutX="231.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%209.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="119.0" layoutX="39.0" layoutY="646.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%2010.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="119.0" layoutX="232.0" layoutY="646.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%2011.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnCompra1" layoutX="250.0" layoutY="610.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="82.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="COMPRAR" textFill="RED" wrapText="true" />
+            <Button fx:id="btnCompra2" layoutX="59.0" layoutY="767.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="82.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="COMPRAR" textFill="RED" wrapText="true" />
+            <Button fx:id="btnCompra3" layoutX="249.0" layoutY="767.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="82.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="COMPRAR" textFill="RED" wrapText="true" />
+            <Text fill="WHITE" layoutX="73.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$255.000">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="72.0" layoutY="758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$145.000">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="269.0" layoutY="757.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$95.000">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="270.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$355.000">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
    </children>

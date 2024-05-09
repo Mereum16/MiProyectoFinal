@@ -17,6 +17,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -29,6 +31,8 @@ public class PANTALLAINICIOController implements Initializable {
     private ViewLoginController controllerViewLogin;
     private Stage stage;
     @FXML
+    private ImageView Lupa;
+    @FXML
     private Button btnCompra;
      @FXML
     private Label lblUser;
@@ -39,6 +43,33 @@ public class PANTALLAINICIOController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    @FXML
+    void Buscar(MouseEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Busqueda.fxml"));
+            Parent root = loader.load();
+            
+            BusquedaController controller = loader.getController();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            
+            stage.show();
+            
+            
+            stage.setOnCloseRequest(e -> controller.CloseWindows());
+            
+            Stage myStage = (Stage) this.btnCompra.getScene().getWindow();
+            
+            myStage.close();
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(BusquedaController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
      @FXML
     void ShowCompra(ActionEvent event) {
       try {
