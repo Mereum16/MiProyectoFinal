@@ -63,16 +63,11 @@
                   <Image url="@../images/Rectangle%203.png" />
                </image>
             </ImageView>
-            <Label fx:id="lblUser" layoutX="148.0" layoutY="111.0" text="Name" textFill="WHITE">
+            <Label fx:id="lblUser" layoutX="65.0" layoutY="111.0" text="Name" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Text fill="WHITE" layoutX="34.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido:">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Text>
             <ImageView fitHeight="13.0" fitWidth="19.0" layoutX="81.0" layoutY="439.0" pickOnBounds="true">
                <image>
                   <Image url="@../images/Carro.png" />
@@ -82,6 +77,11 @@
             <ImageView fitHeight="196.0" fitWidth="230.0" layoutX="81.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/Rectangle%208.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="22.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/User2.png" />
                </image>
             </ImageView>
          </children>
