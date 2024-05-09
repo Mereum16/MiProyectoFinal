@@ -5,15 +5,41 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 
 <HBox prefHeight="844.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistroController">
    <children>
       <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;">
          <children>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="&lt; Volver" />
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#ShowLogin3" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="&lt; Volver">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9833333492279053" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
             <Text fill="WHITE" layoutX="55.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRATE">
                <font>
                   <Font name="System Bold" size="18.0" />
@@ -42,13 +68,61 @@
                </font>
             </Text>
             <PasswordField layoutX="40.0" layoutY="509.0" prefHeight="40.0" prefWidth="246.0" />
-            <Button fx:id="btnCrearCuenta" layoutX="40.0" layoutY="643.0" minHeight="61.0" mnemonicParsing="false" onAction="#ShowLogin" prefWidth="321.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="Crear cuenta" />
+            <Button fx:id="btnCrearCuenta" layoutX="40.0" layoutY="643.0" minHeight="61.0" mnemonicParsing="false" onAction="#ShowLogin" prefWidth="321.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="Crear cuenta">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9833333492279053" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
             <Text fill="WHITE" layoutX="52.0" layoutY="761.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ya tienes una cuenta?">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
-            <Button fx:id="btnLogin" layoutX="201.0" layoutY="743.0" mnemonicParsing="false" onAction="#ShowLogin2" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="Iniciar Sesion" />
+            <Button fx:id="btnLogin" layoutX="201.0" layoutY="743.0" mnemonicParsing="false" onAction="#ShowLogin2" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="Iniciar Sesion">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9833333492279053" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
          </children>
       </AnchorPane>
    </children>
