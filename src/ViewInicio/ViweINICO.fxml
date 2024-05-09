@@ -15,7 +15,7 @@
    <children>
       <AnchorPane prefHeight="844.0" prefWidth="390.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b1b1b" height="618.0" layoutY="226.0" stroke="BLACK" strokeType="INSIDE" width="390.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b1b1b" height="623.0" layoutY="226.0" stroke="BLACK" strokeType="INSIDE" width="390.0" />
             <ImageView fitHeight="229.0" fitWidth="390.0" pickOnBounds="true">
                <image>
                   <Image url="@../images/Rectangle%206.png" />
@@ -29,7 +29,7 @@
                   <Image url="@../images/Bienvenido%20a%20GamingDX.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnAcceso" layoutX="96.0" layoutY="710.0" mnemonicParsing="false" onAction="#ShowLogin" prefHeight="44.0" prefWidth="200.0" text="Comienza tu aventura" AnchorPane.rightAnchor="94.0">
+            <Button fx:id="btnAcceso" layoutX="96.0" layoutY="710.0" mnemonicParsing="false" onAction="#ShowLogin" prefHeight="44.0" prefWidth="200.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="Comienza tu aventura" AnchorPane.rightAnchor="94.0">
                <textFill>
                   <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                      <stops>

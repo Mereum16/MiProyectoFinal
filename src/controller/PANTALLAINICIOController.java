@@ -30,7 +30,7 @@ public class PANTALLAINICIOController implements Initializable {
     private Stage stage;
     @FXML
     private Button btnCompra;
-    @FXML
+     @FXML
     private Label lblUser;
     /**
      * Initializes the controller class.
@@ -66,9 +66,7 @@ public class PANTALLAINICIOController implements Initializable {
         }
     }
     
-public void CloseWindows(){
-        
-    }
+
     void initialize(String text, Stage stage, ViewLoginController aThis) {
        lblUser.setText(text);
        this.controllerViewLogin = aThis;
@@ -78,5 +76,7 @@ public void CloseWindows(){
         
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
+    public void CloseWindows(){
+        
+    }
 }

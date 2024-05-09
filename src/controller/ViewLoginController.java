@@ -17,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
@@ -31,7 +32,7 @@ public class ViewLoginController implements Initializable {
     @FXML
     private TextField txtUser;
     @FXML
-    private TextField txtPassword;
+    private PasswordField txtPassword;
     @FXML
     private Button btnLogin;
 
@@ -66,9 +67,9 @@ public class ViewLoginController implements Initializable {
             stage.setOnCloseRequest(e -> controller.CloseWindows());
             
             Stage myStage = (Stage) this.btnLogin.getScene().getWindow();
-            controller.initialize(txtUser.getText(), stage, this);
+            
             myStage.close();
-                    
+                    controller.initialize(txtUser.getText(), stage, this);
         } catch (IOException ex) {
             Logger.getLogger(PANTALLAINICIOController.class.getName()).log(Level.SEVERE, null, ex);
         }
