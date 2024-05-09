@@ -67,7 +67,7 @@
                </font>
             </Button>
             <Text fill="#fffefe" layoutX="39.0" layoutY="801.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No tienes una cuenta? " />
-            <Button cache="true" layoutX="160.0" layoutY="780.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="Registrate" AnchorPane.topAnchor="780.0">
+            <Button fx:id="btnRegistrar" cache="true" layoutX="160.0" layoutY="780.0" mnemonicParsing="false" onAction="#ShowRegistro" prefHeight="31.0" prefWidth="90.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="Registrate" AnchorPane.topAnchor="780.0">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>

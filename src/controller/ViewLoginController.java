@@ -35,6 +35,10 @@ public class ViewLoginController implements Initializable {
     private PasswordField txtPassword;
     @FXML
     private Button btnLogin;
+    
+    @FXML
+    private Button btnRegistrar;
+
 
     @FXML
     private void eventKey(KeyEvent event) {
@@ -50,6 +54,33 @@ public class ViewLoginController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    @FXML
+    void ShowRegistro(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Registro.fxml"));
+            Parent root = loader.load();
+            
+            RegistroController controller = loader.getController();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            
+            stage.show();
+            
+            
+            stage.setOnCloseRequest(e -> controller.CloseWindows());
+            
+            Stage myStage = (Stage) this.btnRegistrar.getScene().getWindow();
+            
+            myStage.close();
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(RegistroController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
      @FXML
     private void ShowInicio(ActionEvent event) {
         try {
