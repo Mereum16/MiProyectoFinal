@@ -18,31 +18,6 @@
    <children>
       <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;">
          <children>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#ShowLogin3" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="&lt; Volver">
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="0.9833333492279053" blue="1.0" />
-                           </color>
-                        </Stop>
-                        <Stop offset="0.006729475100942127">
-                           <color>
-                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Button>
             <Text fill="WHITE" layoutX="55.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRATE">
                <font>
                   <Font name="System Bold" size="18.0" />
@@ -101,31 +76,6 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Button fx:id="btnLogin" layoutX="201.0" layoutY="743.0" mnemonicParsing="false" onAction="#ShowLogin2" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="Iniciar Sesion">
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="0.9833333492279053" blue="1.0" />
-                           </color>
-                        </Stop>
-                        <Stop offset="0.006729475100942127">
-                           <color>
-                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="0.0784313753247261" blue="0.6941176652908325" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Button>
             <ImageView fitHeight="110.0" fitWidth="116.0" layoutX="247.0" layoutY="24.0" pickOnBounds="true">
                <image>
                   <Image url="@../images/gamer-gaming-logo-vector-47133848.jpg" />
@@ -133,6 +83,16 @@
                <effect>
                   <Reflection />
                </effect>
+            </ImageView>
+            <Text fx:id="Sesion" fill="#fff4f4" layoutX="192.0" layoutY="760.0" onMouseClicked="#IniciaSesion" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicia Sesion">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="Volver" fitHeight="26.0" fitWidth="36.0" layoutX="22.0" layoutY="28.0" onMouseClicked="#Volver" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Flecha.png" />
+               </image>
             </ImageView>
          </children>
       </AnchorPane>

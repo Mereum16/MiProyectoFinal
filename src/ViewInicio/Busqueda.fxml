@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -9,28 +8,64 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BusquedaController">
    <children>
       <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;">
          <children>
-            <Button layoutX="160.0" layoutY="766.0" mnemonicParsing="false" text="Button" />
-            <TextField layoutX="31.0" layoutY="32.0" prefHeight="35.0" prefWidth="334.0" />
-            <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="322.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <TextField layoutX="22.0" layoutY="62.0" prefHeight="35.0" prefWidth="346.0" promptText="Logitech G203" />
+            <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="327.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/Vector(1).png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="244.0" fitWidth="334.0" layoutX="31.0" layoutY="67.0" pickOnBounds="true">
+            <ImageView fitHeight="244.0" fitWidth="340.0" layoutX="26.0" layoutY="98.0" pickOnBounds="true">
                <image>
                   <Image url="@../images/Rectangle%2016.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="45.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mas Buscados:">
+            <Text fill="WHITE" layoutX="32.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mas Buscados:">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Text>
+            <ImageView fx:id="Volver" fitHeight="19.0" fitWidth="24.0" layoutX="17.0" layoutY="27.0" onMouseClicked="#Login" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Flecha.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="344.0" fitWidth="328.0" layoutX="32.0" layoutY="349.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Spiderman.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="305.0" layoutX="43.0" layoutY="712.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Rectangle%205_1.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="123.0" layoutY="734.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRAN REBAJON DEL 50%">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="66.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logitech G203" />
+            <Text fill="WHITE" layoutX="68.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logitech G502 HERO" />
+            <Text fill="WHITE" layoutX="66.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Torre Gamer RGB" />
+            <ImageView fitHeight="17.0" fitWidth="18.0" layoutX="37.0" layoutY="134.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Reloj.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="18.0" layoutX="37.0" layoutY="160.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Reloj.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="18.0" layoutX="37.0" layoutY="183.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Reloj.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

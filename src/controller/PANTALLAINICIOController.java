@@ -33,7 +33,7 @@ public class PANTALLAINICIOController implements Initializable {
     @FXML
     private ImageView Lupa;
     @FXML
-    private Button btnCompra;
+    private ImageView Producto;
      @FXML
     private Label lblUser;
     /**
@@ -43,6 +43,33 @@ public class PANTALLAINICIOController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    @FXML
+    void Compra(MouseEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Compra.fxml"));
+            Parent root = loader.load();
+            
+            CompraController controller = loader.getController();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            
+            stage.show();
+            
+            
+            stage.setOnCloseRequest(e -> controller.CloseWindows());
+            
+            Stage myStage = (Stage) this.Producto.getScene().getWindow();
+            
+            myStage.close();
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(CompraController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
     @FXML
     void Buscar(MouseEvent event) {
         try {
@@ -61,7 +88,7 @@ public class PANTALLAINICIOController implements Initializable {
             
             stage.setOnCloseRequest(e -> controller.CloseWindows());
             
-            Stage myStage = (Stage) this.btnCompra.getScene().getWindow();
+            Stage myStage = (Stage) this.Producto.getScene().getWindow();
             
             myStage.close();
                     
@@ -70,32 +97,8 @@ public class PANTALLAINICIOController implements Initializable {
         }
 
     }
-     @FXML
-    void ShowCompra(ActionEvent event) {
-      try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Compra.fxml"));
-            Parent root = loader.load();
-            
-            CompraController controller = loader.getController();
-            
-            Scene scene = new Scene(root);
-            Stage stage = new Stage();
-            
-            stage.setScene(scene);
-            
-            stage.show();
-            
-            
-            stage.setOnCloseRequest(e -> controller.CloseWindows());
-            
-            Stage myStage = (Stage) this.btnCompra.getScene().getWindow();
-            
-            myStage.close();
-                    
-        } catch (IOException ex) {
-            Logger.getLogger(CompraController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+     
+    
     
 
     void initialize(String text, Stage stage, ViewLoginController aThis) {

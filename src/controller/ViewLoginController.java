@@ -20,6 +20,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 /**
@@ -36,8 +38,10 @@ public class ViewLoginController implements Initializable {
     @FXML
     private Button btnLogin;
     
+    
     @FXML
-    private Button btnRegistrar;
+    private Text Register;
+
 
 
     @FXML
@@ -54,8 +58,9 @@ public class ViewLoginController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
     @FXML
-    void ShowRegistro(ActionEvent event) {
+    void Registro(MouseEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Registro.fxml"));
             Parent root = loader.load();
@@ -72,7 +77,7 @@ public class ViewLoginController implements Initializable {
             
             stage.setOnCloseRequest(e -> controller.CloseWindows());
             
-            Stage myStage = (Stage) this.btnRegistrar.getScene().getWindow();
+            Stage myStage = (Stage) this.Register.getScene().getWindow();
             
             myStage.close();
                     
