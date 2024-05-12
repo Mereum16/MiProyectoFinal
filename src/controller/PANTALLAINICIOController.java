@@ -37,6 +37,8 @@ public class PANTALLAINICIOController implements Initializable {
      @FXML
     private ImageView Producto2;
      @FXML
+    private ImageView Producto3;
+     @FXML
     private Label lblUser;
     /**
      * Initializes the controller class.
@@ -45,6 +47,33 @@ public class PANTALLAINICIOController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    @FXML
+    void Compra3(MouseEvent event) {
+         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Compra3.fxml"));
+            Parent root = loader.load();
+            
+            Compra3Controller controller = loader.getController();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            
+            stage.show();
+            
+            
+            stage.setOnCloseRequest(e -> controller.CloseWindows());
+            
+            Stage myStage = (Stage) this.Producto3.getScene().getWindow();
+            
+            myStage.close();
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(Compra3Controller.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
     @FXML
     void Compra2(MouseEvent event) {
         try {

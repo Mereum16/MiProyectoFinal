@@ -87,7 +87,7 @@
                   <Image url="@../images/Rectangle%209.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="94.0" fitWidth="119.0" layoutX="39.0" layoutY="646.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="Producto3" fitHeight="94.0" fitWidth="119.0" layoutX="39.0" layoutY="646.0" onMouseClicked="#Compra3" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/Rectangle%2010.png" />
                </image>
