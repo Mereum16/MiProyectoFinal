@@ -9,12 +9,10 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Compra2Controller">
    <children>
       <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;">
          <children>
-            <TextField layoutX="21.0" layoutY="59.0" prefHeight="32.0" prefWidth="302.0" />
             <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="295.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/Vector(1).png" />
@@ -95,6 +93,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
+            <TextField layoutX="21.0" layoutY="59.0" prefHeight="32.0" prefWidth="302.0" />
          </children>
       </AnchorPane>
    </children>

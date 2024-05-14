@@ -5,87 +5,92 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controller.Compra3Controller">
+<HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Compra3Controller">
    <children>
-      <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="305.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Vector(1).png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="344.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Vector.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="14.0" fitWidth="27.0" layoutX="344.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Vector-1.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="123.0" fitWidth="400.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true">
-         <image>
-            <Image url="@../images/Rectangle%2016.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="Volver" fitHeight="26.0" fitWidth="33.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#Inicio" pickOnBounds="true">
-         <image>
-            <Image url="@../images/Flecha.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="713.0" fitWidth="401.0" layoutX="1.0" layoutY="150.0" pickOnBounds="true">
-         <image>
-            <Image url="@../images/Rectangle%2016.png" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="76.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ultra Combo Gamer RGB">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="23.0" fitWidth="122.0" layoutX="41.0" layoutY="256.0" pickOnBounds="true">
-         <image>
-            <Image url="@../images/Rectangle%203.png" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="66.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promocion">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="216.0" fitWidth="282.0" layoutX="64.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Rectangle%2010.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="230.0" fitWidth="287.0" layoutX="57.0" layoutY="317.0" pickOnBounds="true">
-         <image>
-            <Image url="@../images/Rectangle%2016.png" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="76.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$145.000" wrappingWidth="67.939453125">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <Text fill="#17f703" layoutX="86.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envio Gratis">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Button layoutX="107.0" layoutY="673.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="190.0" style="-fx-background-radius: 90; -fx-background-color: #0000FF; -fx-border-radius: 90;" text="Comprar ahora" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="107.0" layoutY="722.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="190.0" style="-fx-background-radius: 90; -fx-border-radius: 90; -fx-background-color: #ADD8E6;" text="Agregar al carrito" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <TextField layoutX="31.0" layoutY="69.0" prefHeight="32.0" prefWidth="302.0" />
+      <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="305.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Vector(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="344.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Vector.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="14.0" fitWidth="27.0" layoutX="344.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Vector-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="123.0" fitWidth="400.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Rectangle%2016.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Volver" fitHeight="26.0" fitWidth="33.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#Inicio" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Flecha.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="713.0" fitWidth="401.0" layoutX="1.0" layoutY="150.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Rectangle%2016.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="76.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ultra Combo Gamer RGB">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="23.0" fitWidth="122.0" layoutX="41.0" layoutY="256.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Rectangle%203.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="66.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promocion">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="216.0" fitWidth="282.0" layoutX="64.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%2010.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="230.0" fitWidth="287.0" layoutX="76.0" layoutY="317.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Rectangle%2016.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="76.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$145.000" wrappingWidth="67.939453125">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#17f703" layoutX="86.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envio Gratis">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Button layoutX="107.0" layoutY="673.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="190.0" style="-fx-background-radius: 90; -fx-background-color: #0000FF; -fx-border-radius: 90;" text="Comprar ahora" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="107.0" layoutY="722.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="190.0" style="-fx-background-radius: 90; -fx-border-radius: 90; -fx-background-color: #ADD8E6;" text="Agregar al carrito" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField layoutX="31.0" layoutY="69.0" prefHeight="32.0" prefWidth="302.0" />
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+</HBox>
