@@ -1,11 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CarritoController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controller.CarritoController">
+   <children>
+      <ImageView fitHeight="123.0" fitWidth="390.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2016.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Volver" fitHeight="26.0" fitWidth="33.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#Inicio" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Flecha.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="324.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Vector_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="247.0" fitWidth="390.0" layoutY="148.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2016.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="156.0" fitWidth="390.0" layoutY="451.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2016.png" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="100.0" layoutY="281.0" radius="71.0" stroke="WHITE" strokeType="INSIDE" />
+      <ImageView fitHeight="93.0" fitWidth="134.0" layoutX="41.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Rectangle%208.png" />
+         </image>
+      </ImageView>
+      <Text fill="#33c738" layoutX="171.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agregaste a tu carrito">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="195.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mouse Gamer Logitech G503">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="195.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RGB 10 BOTONES">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="36.0" fitWidth="48.0" layoutX="122.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/CARRITOCOMPRA.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="15.0" layoutX="132.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/CARRITOCOMPRA1.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="24.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 Producto en tu carrito: $255.000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle fill="WHITE" layoutX="324.0" layoutY="490.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="301.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Rectangle%208.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="57.0" layoutY="554.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="117.0" style="-fx-background-radius: 90; -fx-background-color: #0000FF; -fx-border-radius: 90;" text="Ver Carrito" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="200.0" layoutY="554.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="124.0" style="-fx-background-radius: 90; -fx-border-radius: 90; -fx-background-color: #ADD8E6;" text="Comprar Carrito" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>

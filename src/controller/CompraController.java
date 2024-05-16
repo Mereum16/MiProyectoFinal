@@ -9,11 +9,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -27,12 +29,15 @@ public class CompraController implements Initializable {
 
     @FXML
     private ImageView Volver;
+   @FXML
+    private Button btnCarrito;
 
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
     @FXML
     void Inicio(MouseEvent event) {
         try {
@@ -58,6 +63,34 @@ public class CompraController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(PANTALLAINICIOController.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+    }
+    @FXML
+    void ShowCarrito(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Carrito.fxml"));
+            Parent root = loader.load();
+            
+            CarritoController controller = loader.getController();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            
+            stage.show();
+            
+            
+            stage.setOnCloseRequest(e -> controller.CloseWindows());
+            
+            Stage myStage = (Stage) this.btnCarrito.getScene().getWindow();
+            
+            myStage.close();
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(CarritoController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
 
     }
     public void CloseWindows(){
