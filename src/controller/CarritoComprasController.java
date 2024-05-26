@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author Miguel Angel
  */
-public class FXMLController implements Initializable {
+public class CarritoComprasController implements Initializable {
 
     /**
      * Initializes the controller class.
