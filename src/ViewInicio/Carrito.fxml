@@ -8,8 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controller.CarritoController">
+<AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CarritoController">
    <children>
       <ImageView fitHeight="123.0" fitWidth="390.0" pickOnBounds="true">
          <image>
@@ -78,7 +77,7 @@
             <Image url="@../images/Rectangle%208.png" />
          </image>
       </ImageView>
-      <Button layoutX="57.0" layoutY="554.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="117.0" style="-fx-background-radius: 90; -fx-background-color: #0000FF; -fx-border-radius: 90;" text="Ver Carrito" textFill="WHITE">
+      <Button fx:id="btnCarrito" layoutX="57.0" layoutY="554.0" mnemonicParsing="false" onAction="#ShowCarrito" prefHeight="16.0" prefWidth="117.0" style="-fx-background-radius: 90; -fx-background-color: #0000FF; -fx-border-radius: 90;" text="Ver Carrito" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
