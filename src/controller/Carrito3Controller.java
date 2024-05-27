@@ -25,10 +25,11 @@ import javafx.stage.Stage;
  *
  * @author Miguel Angel
  */
-public class Compra3Controller implements Initializable {
-     @FXML
+public class Carrito3Controller implements Initializable {
+    @FXML
     private ImageView Volver;
-     @FXML
+
+    @FXML
     private Button btnCarrito;
 
     /**
@@ -38,42 +39,13 @@ public class Compra3Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    @FXML
-    void ShowCarrito(ActionEvent event) {
-         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Carrito3.fxml"));
-            Parent root = loader.load();
-            
-            Carrito3Controller controller = loader.getController();
-            
-            Scene scene = new Scene(root);
-            Stage stage = new Stage();
-            
-            stage.setScene(scene);
-            
-            stage.show();
-            
-            
-            stage.setOnCloseRequest(e -> controller.CloseWindows());
-            
-            Stage myStage = (Stage) this.btnCarrito.getScene().getWindow();
-            
-            myStage.close();
-                    
-        } catch (IOException ex) {
-            Logger.getLogger(CarritoController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    
-
-    }
-    @FXML
+     @FXML
     void Inicio(MouseEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/PANTALLAINICIO.fxml"));
+            try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Compra3.fxml"));
             Parent root = loader.load();
             
-            PANTALLAINICIOController controller = loader.getController();
+            Compra3Controller controller = loader.getController();
             
             Scene scene = new Scene(root);
             Stage stage = new Stage();
@@ -90,8 +62,13 @@ public class Compra3Controller implements Initializable {
             myStage.close();
                     
         } catch (IOException ex) {
-            Logger.getLogger(PANTALLAINICIOController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CompraController.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+    }
+
+    @FXML
+    void ShowCarrito(ActionEvent event) {
 
     }
     public void CloseWindows(){
