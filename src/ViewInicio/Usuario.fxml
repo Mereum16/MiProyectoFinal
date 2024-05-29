@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controller.UsuarioController">
    <children>
-      <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="21.0" layoutY="34.0" pickOnBounds="true">
+      <ImageView fx:id="Volver" fitHeight="31.0" fitWidth="36.0" layoutX="21.0" layoutY="34.0" onMouseClicked="#Inicio" pickOnBounds="true">
          <image>
             <Image url="@../images/Flecha.png" />
          </image>

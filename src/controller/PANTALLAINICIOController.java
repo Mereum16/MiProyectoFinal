@@ -73,7 +73,7 @@ public class PANTALLAINICIOController implements Initializable {
             Stage myStage = (Stage) this.Producto4.getScene().getWindow();
             
             myStage.close();
-                    
+                   
         } catch (IOException ex) {
             Logger.getLogger(UsuarioController.class.getName()).log(Level.SEVERE, null, ex);
         }
