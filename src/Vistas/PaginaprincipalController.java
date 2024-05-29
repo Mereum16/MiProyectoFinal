@@ -10,6 +10,8 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -20,8 +22,10 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyEvent;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import javafx.stage.WindowEvent;
@@ -33,73 +37,62 @@ import model.objSTACK;
  *
  * @author Miguel Angel
  */
-public class RegistrarDatosController implements Initializable {
+public class PaginaprincipalController implements Initializable {
     
-     public static objSTACK pila = new objSTACK();
+    static public objSTACK pilaP = new objSTACK();
+    RegistrarDatosController registro = new RegistrarDatosController();
 
     @FXML
-    private TextField txtApell;
+    private TableView<datos> tbList;
     @FXML
-    private TextField txtNom;
+    private TableColumn<datos, String> Nom;
     @FXML
-    private TextField txtDepartamento;
+    private TableColumn<datos, String> Apell;
     @FXML
-    private TextField txtTelefono;
+    private TableColumn<datos, String> Departamento;
     @FXML
-    private TextField txtDireccion;
+    private TableColumn<datos, String> Direccion;
+    @FXML
+    private TableColumn<datos, String> Telefono;
+    @FXML
+    private TextField txtFecha;
     @FXML
     private Button btnRegistrar;
-    @FXML
-    private Button btnBack;
+    
+     public static ObservableList<datos> Productos = FXCollections.observableArrayList();
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+         Vistas.RegistrarDatosController.pila = pilaP;
+       /* dia = controller.registro.RegistrarprodController.dia;
+        mes = controller.registro.RegistrarprodController.mes;
+        año = controller.registro.RegistrarprodController.año;
+        fecha = String.valueOf(dia) + "/" + String.valueOf(mes+1) + "/" + String.valueOf(año);
+        txtFecha.setText(fecha);*/
+        Nom.setCellValueFactory(new PropertyValueFactory<datos, String>("Nom"));
+        Apell.setCellValueFactory(new PropertyValueFactory<datos, String>("Apell"));
+        Departamento.setCellValueFactory(new PropertyValueFactory<datos, String>("Departamento"));
+        Direccion.setCellValueFactory(new PropertyValueFactory<datos, String>("Direccion"));
+        Telefono.setCellValueFactory(new PropertyValueFactory<datos, String>("Telefono"));
+        
+        tbList.setItems(Productos);
     }    
 
     @FXML
-    private void keyEvent(KeyEvent e) {
-         Object evt = e.getSource();
-        
-        if(evt.equals(txtNom) || evt.equals(txtTelefono)){
-            if (!Character.isDigit(e.getCharacter().charAt(0))){
-                e.consume();
-            }
-        }else if (evt.equals(txtApell)){
-            if (!Character.isLetter(e.getCharacter().charAt(0))){
-                e.consume();
-            }
-        }
-    }
-
-    @FXML
     private void actionEvent(ActionEvent e) {
+        
         Object evt = e.getSource();
         
         if(evt.equals(btnRegistrar)){
-            String nom = txtNom.getText();
-            String apell = txtApell.getText();
-            String direccion = txtDireccion.getText();
-            String departamento = txtDepartamento.getText();
-            String telefono = txtTelefono.getText();
-            
-            datos prod = new datos(nom, apell, telefono, direccion, departamento);
-            pila.setPushProducto(prod);
-            loadStage("/Vistas/PaginaPrincipal.fxml", e);
-            
-        
-       }
-        if(evt.equals(btnBack)){
-            loadStage("/Vistas/Paginaprincipal.fxml", e);
+            loadStage("/Vista/Registrarprod.fxml", e);
         }
     }
-    
-    private void loadStage(String url, Event event){
+     private void loadStage(String url, Event event){
         
-        try {
+        try {    
             Object eventSource = event.getSource();
             Node sourceAsNode = (Node) eventSource;
             Scene oldScene = sourceAsNode.getScene();
@@ -125,7 +118,4 @@ public class RegistrarDatosController implements Initializable {
         
     }
     
-    public void CloseWindows(){
-        
-    }
 }
