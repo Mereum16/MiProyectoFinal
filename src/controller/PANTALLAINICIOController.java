@@ -41,6 +41,8 @@ public class PANTALLAINICIOController implements Initializable {
      @FXML
     private ImageView Producto4;
      @FXML
+    private ImageView Usuario;
+     @FXML
     private Label lblUser;
     /**
      * Initializes the controller class.
@@ -49,6 +51,34 @@ public class PANTALLAINICIOController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    @FXML
+    void Buscar2(MouseEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Usuario.fxml"));
+            Parent root = loader.load();
+            
+            UsuarioController controller = loader.getController();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            
+            stage.show();
+            
+            
+            stage.setOnCloseRequest(e -> controller.CloseWindows());
+            
+            Stage myStage = (Stage) this.Producto4.getScene().getWindow();
+            
+            myStage.close();
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(UsuarioController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
     @FXML
     void Compra4(MouseEvent event) {
         try {

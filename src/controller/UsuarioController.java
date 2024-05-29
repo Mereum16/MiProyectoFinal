@@ -22,5 +22,7 @@ public class UsuarioController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
+    public void CloseWindows(){
+        
+    }
 }

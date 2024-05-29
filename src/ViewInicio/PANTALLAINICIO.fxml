@@ -77,7 +77,7 @@
                   <Image url="@../images/Rectangle%208.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="22.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="Usuario" fitHeight="38.0" fitWidth="44.0" layoutX="22.0" layoutY="106.0" onMouseClicked="#Buscar2" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/User2.png" />
                </image>
