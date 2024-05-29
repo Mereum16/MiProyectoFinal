@@ -6,13 +6,16 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vistas.PaginaprincipalController">
    <children>
-      <TableView fx:id="tbList" layoutX="21.0" layoutY="106.0" prefHeight="372.0" prefWidth="347.0" style="-fx-background-radius: 10;" AnchorPane.bottomAnchor="366.0" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="106.0">
+      <TableView fx:id="tbList" layoutX="28.0" layoutY="251.0" prefHeight="372.0" prefWidth="347.0" style="-fx-background-radius: 10;" AnchorPane.bottomAnchor="221.79999999999995" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="251.0">
         <columns>
           <TableColumn fx:id="Nom" prefWidth="66.39999616146088" text="Nombre" />
           <TableColumn fx:id="Apell" minWidth="5.600006103515625" prefWidth="68.00000762939453" text="Apellido" />
@@ -33,15 +36,31 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Button fx:id="btnRegistrar" layoutX="159.0" layoutY="790.0" mnemonicParsing="false" onAction="#actionEvent" style="-fx-border-radius: 90; -fx-background-radius: 90;" text="Registrar">
+      <Button fx:id="btnRegistrar" layoutX="143.0" layoutY="690.0" mnemonicParsing="false" onAction="#actionEvent" style="-fx-border-radius: 90; -fx-background-radius: 90; -fx-background-color: #0000FF;" text="Registrar datos" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
       </Button>
-      <Label layoutX="102.0" layoutY="35.0" text="Registro de datos" textFill="WHITE">
+      <Label layoutX="81.0" layoutY="191.0" text="Nube de domicilios" textFill="WHITE">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
+      <ImageView fitHeight="169.0" fitWidth="390.0" opacity="0.47" pickOnBounds="true">
+         <image>
+            <Image url="@../images/tipos-de-nube-informatica-1024x675.jpg" />
+         </image>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </ImageView>
+      <Button layoutX="134.0" layoutY="645.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="121.0" style="-fx-background-radius: 90; -fx-border-radius: 90; -fx-background-color: #0000FF;" text="Terminar de pagar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

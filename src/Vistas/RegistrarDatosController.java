@@ -93,7 +93,7 @@ public class RegistrarDatosController implements Initializable {
         
        }
         if(evt.equals(btnBack)){
-            loadStage("/Vistas/Paginaprincipal.fxml", e);
+            loadStage("/ViewInicio/CarritoCompras.fxml", e);
         }
     }
     

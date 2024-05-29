@@ -87,7 +87,7 @@ public class PaginaprincipalController implements Initializable {
         Object evt = e.getSource();
         
         if(evt.equals(btnRegistrar)){
-            loadStage("/Vista/Registrarprod.fxml", e);
+            loadStage("/Vistas/RegistrarDatos.fxml", e);
         }
     }
      private void loadStage(String url, Event event){

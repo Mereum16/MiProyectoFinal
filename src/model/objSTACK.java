@@ -21,13 +21,13 @@ public class objSTACK {
     
     public void setPushProducto (datos p){
         if(getInfoProductoId(p.Nom) != null){
-            JOptionPane.showMessageDialog(null, "El ID del producto ya se encuentra registrado");
+            JOptionPane.showMessageDialog(null, "El Nombre ya se encuentra registrado");
         }else if(getInfoProductoNom(p.Apell) != null){
-            JOptionPane.showMessageDialog(null, "El Nombre del producto ya se encuentra registrado");
+            JOptionPane.showMessageDialog(null, "El Apellido ya se encuentra registrado");
         }else{
             pila.push(p);
             Vistas.PaginaprincipalController.Productos.add(p);
-            JOptionPane.showMessageDialog(null, "Producto registrado exitosamente!");
+            JOptionPane.showMessageDialog(null, "Datos registrados exitosamente!");
         }
         
     }
@@ -43,12 +43,12 @@ public class objSTACK {
         aux = null;
         return aux;
     }
-    public datos getInfoProductoNom (String Nom){
+    public datos getInfoProductoNom (String apell){
         datos aux = new datos();
         int i = 0;
         while(i<pila.size()){
             aux = (datos) pila.get(i);
-            if(aux.Apell.equals(Nom))
+            if(aux.Apell.equals(apell))
                 return aux;
             i++;
         }
