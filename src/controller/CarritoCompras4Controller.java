@@ -4,6 +4,8 @@
  */
 package controller;
 
+import Vistas2.RegistrarDatos_2Controller;
+import Vistas3.RegistrarDatos_3Controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -25,12 +27,11 @@ import javafx.stage.Stage;
  *
  * @author Miguel Angel
  */
-public class Carrito4Controller implements Initializable {
-     @FXML
-    private ImageView Volver;
-
+public class CarritoCompras4Controller implements Initializable {
     @FXML
-    private Button btnCarrito;
+     private ImageView Volver;
+    @FXML
+    private Button btnComprar;
 
     /**
      * Initializes the controller class.
@@ -39,13 +40,13 @@ public class Carrito4Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-     @FXML
+    @FXML
     void Inicio(MouseEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Compra4.fxml"));
+         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/Carrito4.fxml"));
             Parent root = loader.load();
             
-            Compra4Controller controller = loader.getController();
+            Carrito4Controller controller = loader.getController();
             
             Scene scene = new Scene(root);
             Stage stage = new Stage();
@@ -62,18 +63,19 @@ public class Carrito4Controller implements Initializable {
             myStage.close();
                     
         } catch (IOException ex) {
-            Logger.getLogger(CompraController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Carrito4Controller.class.getName()).log(Level.SEVERE, null, ex);
         }
+
 
     }
 
     @FXML
-    void ShowCarrito(ActionEvent event) {
+    void ShowCompra(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/CarritoCompras4.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Vistas3/RegistrarDatos_3.fxml"));
             Parent root = loader.load();
             
-            CarritoCompras4Controller controller = loader.getController();
+            RegistrarDatos_3Controller controller = loader.getController();
             
             Scene scene = new Scene(root);
             Stage stage = new Stage();
@@ -85,15 +87,16 @@ public class Carrito4Controller implements Initializable {
             
             stage.setOnCloseRequest(e -> controller.CloseWindows());
             
-            Stage myStage = (Stage) this.btnCarrito.getScene().getWindow();
+            Stage myStage = (Stage) this.btnComprar.getScene().getWindow();
             
             myStage.close();
                     
         } catch (IOException ex) {
-            Logger.getLogger(CarritoCompras4Controller.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(RegistrarDatos_3Controller.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
+    
     public void CloseWindows(){
         
     }

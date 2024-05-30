@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vistas3.Finalizar_3Controller">
+   <children>
+      <Label fx:id="lblPago" layoutX="132.0" layoutY="90.0" text="Label" textFill="WHITE" />
+      <Button fx:id="btnFin" layoutX="146.0" layoutY="737.0" mnemonicParsing="false" onAction="#actionEvent" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: #0000FF;" text="Finalizar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="64.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disfruta de tu nuevo producto!">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de pago:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="32.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuenta:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCuenta" layoutX="85.0" layoutY="116.0" text="Label" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="31.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de contacto alternativo por si ocurre un problema" />
+      <Text fill="WHITE" layoutX="31.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durante la entrega del producto:" />
+      <Label fx:id="lblTel" layoutX="38.0" layoutY="219.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="32.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Costo del envio:         0$">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="82.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Rectangle%2011.png" />
+         </image>
+      </ImageView>
+      <Text fill="#00ff59" layoutX="43.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Llega en aprox:         2 dias">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="167.0" fitWidth="236.0" layoutX="59.0" layoutY="312.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2014.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="127.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enhorabuena!">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Circle fill="WHITE" layoutX="310.0" layoutY="283.0" radius="83.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="110.0" fitWidth="111.0" layoutX="255.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Gracias%20por%20tu%20compra.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="52.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No olvides que en siempres puedes confiar en GamingDX" />
+      <Text fill="WHITE" layoutX="57.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tu tienda favorita! A tu Precio Favorito!" />
+      <Text fill="WHITE" layoutX="60.0" layoutY="639.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deseas Rastrear tu entrega?">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#00ff55" layoutX="81.0" layoutY="666.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Presiona aqui.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
