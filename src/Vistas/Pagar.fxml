@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="Vistas.PagarController">
+   <children>
+      <Text fill="WHITE" layoutX="88.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Completa tu pago">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="33.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metodo de pago" />
+      <TextField fx:id="txtPago" layoutX="33.0" layoutY="146.0" />
+      <Text fill="WHITE" layoutX="39.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de cuenta" />
+      <TextField layoutX="215.0" layoutY="220.0" prefHeight="26.0" prefWidth="105.0" />
+      <Text fill="WHITE" layoutX="215.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de expiracion" />
+      <Text fill="WHITE" layoutX="38.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios" />
+      <TextField layoutX="38.0" layoutY="363.0" prefHeight="224.0" prefWidth="314.0" />
+      <Text fill="WHITE" layoutX="42.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Producto">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="109.0" layoutY="667.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 Producto en tu carrito: $255.000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle fill="WHITE" layoutX="63.0" layoutY="662.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="40.0" layoutY="646.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Rectangle%208.png" />
+         </image>
+      </ImageView>
+      <Text fill="#00ff59" layoutX="113.0" layoutY="687.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envio Gratis" />
+      <Button fx:id="btnCompra" layoutX="159.0" layoutY="730.0" mnemonicParsing="false" onAction="#actionEvent" style="-fx-background-color: #0000FF;" text="Completar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtTel" layoutX="173.0" layoutY="276.0" prefHeight="26.0" prefWidth="150.0" />
+      <Text fill="WHITE" layoutX="42.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacto alternativo" />
+      <PasswordField fx:id="txtCuenta" layoutX="34.0" layoutY="220.0" />
+      <Text fill="WHITE" layoutX="128.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Tarjeta)" />
+      <ImageView fx:id="Volver" fitHeight="31.0" fitWidth="36.0" layoutX="21.0" layoutY="23.0" onMouseClicked="#Inicio" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Flecha.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

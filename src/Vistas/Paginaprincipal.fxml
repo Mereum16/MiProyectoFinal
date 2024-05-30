@@ -36,7 +36,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Button fx:id="btnRegistrar" layoutX="143.0" layoutY="690.0" mnemonicParsing="false" onAction="#actionEvent" style="-fx-border-radius: 90; -fx-background-radius: 90; -fx-background-color: #0000FF;" text="Registrar datos" textFill="WHITE">
+      <Button fx:id="btnRegistrar" layoutX="133.0" layoutY="704.0" mnemonicParsing="false" onAction="#actionEvent" prefHeight="35.0" prefWidth="123.0" style="-fx-border-radius: 90; -fx-background-radius: 90;" text="Registrar datos">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -57,7 +57,15 @@
             <MotionBlur />
          </effect>
       </ImageView>
-      <Button layoutX="134.0" layoutY="645.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="121.0" style="-fx-background-radius: 90; -fx-border-radius: 90; -fx-background-color: #0000FF;" text="Terminar de pagar" textFill="WHITE">
+      <Button fx:id="btnPagar" layoutX="120.0" layoutY="644.0" mnemonicParsing="false" onAction="#actionEvent" prefHeight="35.0" prefWidth="150.0" style="-fx-background-radius: 90; -fx-border-radius: 90;" text="Terminar de pagar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVolver" layoutX="14.0" layoutY="792.0" mnemonicParsing="false" onAction="#actionEvent" prefHeight="26.0" prefWidth="74.0" style="-fx-border-radius: 90; -fx-background-radius: 90;" text="Regresar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

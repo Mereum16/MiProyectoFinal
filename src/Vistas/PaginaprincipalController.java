@@ -4,6 +4,7 @@
  */
 package Vistas;
 
+import controller.PANTALLAINICIOController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -58,6 +59,11 @@ public class PaginaprincipalController implements Initializable {
     private TextField txtFecha;
     @FXML
     private Button btnRegistrar;
+    @FXML
+    private Button btnPagar;
+    
+   @FXML
+   private Button btnVolver;
     
      public static ObservableList<datos> Productos = FXCollections.observableArrayList();
 
@@ -89,7 +95,39 @@ public class PaginaprincipalController implements Initializable {
         if(evt.equals(btnRegistrar)){
             loadStage("/Vistas/RegistrarDatos.fxml", e);
         }
+        if(evt.equals(btnPagar)){
+            loadStage("/Vistas/Pagar.fxml", e);
+        }
+        if(evt.equals(btnVolver)){
+            loadStage("/ViewInicio/PANTALLAINICIO.fxml", e);
+        }
     }
+
+    /*@FXML
+    void actionEvent2(ActionEvent event) {
+         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Vistas/Pagar.fxml"));
+            Parent root = loader.load();
+            
+            PagarController controller = loader.getController();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            stage.show();
+            
+            stage.setOnCloseRequest(e -> controller.CloseWindows());
+            
+            Stage myStage = (Stage) this.btnPagar.getScene().getWindow();
+            
+            myStage.close();
+                   
+        } catch (IOException ex) {
+            Logger.getLogger(PagarController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }*/
      private void loadStage(String url, Event event){
         
         try {    
