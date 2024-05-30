@@ -28,6 +28,7 @@ public class objSTACK {
         }else{
             pila.push(p);
             Vistas.Paginaprincipal_1Controller.Productos.add(p);
+            Vistas2.Paginaprincipal_2Controller.Productos.add(p);
             JOptionPane.showMessageDialog(null, "Datos registrados exitosamente!");
         }
         

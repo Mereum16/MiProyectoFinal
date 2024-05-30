@@ -50,6 +50,28 @@ public class Pagar_1Controller implements Initializable {
 
     @FXML
     private void actionEvent(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Vistas/Finalizar_1.fxml"));
+            Parent root = loader.load();
+            
+            Finalizar_1Controller controller = loader.getController();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            stage.show();
+            
+            stage.setOnCloseRequest(e -> controller.CloseWindows());
+            
+            Stage myStage = (Stage) this.btnCompra.getScene().getWindow();
+            
+            myStage.close();
+                    controller.initialize(txtPago.getText(),txtCuenta.getText(),txtTel.getText(), stage, this);
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(Finalizar_1Controller.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @FXML
