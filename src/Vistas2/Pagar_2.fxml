@@ -37,7 +37,7 @@
       <Circle fill="WHITE" layoutX="63.0" layoutY="662.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
       <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="40.0" layoutY="646.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/Rectangle%209.png" />
+            <Image url="@../images/Rectangle%2010.png" />
          </image>
       </ImageView>
       <Text fill="#00ff59" layoutX="113.0" layoutY="687.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envio Gratis" />

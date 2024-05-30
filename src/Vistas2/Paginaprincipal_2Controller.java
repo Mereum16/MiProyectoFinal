@@ -128,4 +128,8 @@ public class Paginaprincipal_2Controller implements Initializable {
             Logger.getLogger(Paginaprincipal_2Controller.class.getName()).log(Level.SEVERE,null, ex);
         }
     }
+    
+    public void CloseWindows(){
+        
+    }
 }
