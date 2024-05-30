@@ -4,6 +4,7 @@
  */
 package controller;
 
+import Vistas.PaginaprincipalController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -26,7 +27,8 @@ import javafx.stage.Stage;
 public class UsuarioController implements Initializable {
     @FXML
     private ImageView Volver;
-
+    @FXML
+    private ImageView Acceder;
     /**
      * Initializes the controller class.
      */
@@ -34,7 +36,33 @@ public class UsuarioController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
+     @FXML
+    void Domicilios(MouseEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Vistas/Paginaprincipal.fxml"));
+            Parent root = loader.load();
+            
+            PaginaprincipalController controller = loader.getController();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            
+            stage.show();
+            
+            
+            stage.setOnCloseRequest(e -> controller.CloseWindows());
+            
+            Stage myStage = (Stage) this.Acceder.getScene().getWindow();
+            
+            myStage.close();
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(PaginaprincipalController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
     @FXML
     void Inicio(MouseEvent event) {
         try {

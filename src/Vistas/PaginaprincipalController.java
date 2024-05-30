@@ -117,5 +117,7 @@ public class PaginaprincipalController implements Initializable {
         }
         
     }
-    
+    public void CloseWindows(){
+        
+    }
 }
