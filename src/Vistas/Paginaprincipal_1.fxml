@@ -13,9 +13,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vistas.PaginaprincipalController">
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vistas.Paginaprincipal_1Controller">
    <children>
-      <TableView fx:id="tbList" layoutX="28.0" layoutY="251.0" prefHeight="372.0" prefWidth="347.0" style="-fx-background-radius: 10;" AnchorPane.bottomAnchor="221.79999999999995" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="251.0">
+      <TableView fx:id="tbList2" layoutX="28.0" layoutY="251.0" prefHeight="372.0" prefWidth="347.0" style="-fx-background-radius: 10;" AnchorPane.bottomAnchor="221.79999999999995" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="251.0">
         <columns>
           <TableColumn fx:id="Nom" prefWidth="66.39999616146088" text="Nombre" />
           <TableColumn fx:id="Apell" minWidth="5.600006103515625" prefWidth="68.00000762939453" text="Apellido" />

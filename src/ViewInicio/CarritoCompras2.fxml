@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controller.CarritoCompras2Controller">
+   <children>
+      <ImageView fitHeight="85.0" fitWidth="396.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2014.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Volver" fitHeight="25.0" fitWidth="32.0" layoutX="31.0" layoutY="28.0" onMouseClicked="#Inicio" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Flecha.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="88.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carrito de compras">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="33.0" fitWidth="390.0" layoutX="2.0" layoutY="91.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2014.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="390.0" layoutX="2.0" layoutY="134.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2014.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="16.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATMOSFERA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="85.0" fitWidth="110.0" layoutX="34.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Rectangle%209.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="114.0" fitWidth="134.0" layoutX="21.0" layoutY="146.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2014.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="175.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Audifonos Gamer Logitech G935 RGB ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#00aeff" layoutX="175.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#00aeff" layoutX="244.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guardar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="72.0" layoutX="168.0" layoutY="209.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2014.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="175.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 u.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="9.0" fitWidth="12.0" layoutX="217.0" layoutY="217.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/flecha%20abajo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="390.0" layoutX="4.0" layoutY="290.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2014.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="23.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envio">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="369.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="12.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="169.0" fitWidth="390.0" layoutX="4.0" layoutY="674.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Rectangle%2014.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="17.0" layoutY="696.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Productos(1)">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#00aeff" layoutX="20.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Cual es el costo del envio?">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="323.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$355.000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="21.0" layoutY="764.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="329.0" layoutY="763.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$355.000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnComprar" layoutX="100.0" layoutY="790.0" mnemonicParsing="false" onAction="#ShowCompra" prefHeight="32.0" prefWidth="190.0" style="-fx-background-radius: 90; -fx-background-color: #0000FF; -fx-border-radius: 90;" text="Continuar Compra" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
