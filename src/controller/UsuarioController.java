@@ -39,10 +39,10 @@ public class UsuarioController implements Initializable {
      @FXML
     void Domicilios(MouseEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Vistas/Paginaprincipal.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/ListaDomicilios.fxml"));
             Parent root = loader.load();
             
-            PaginaprincipalController controller = loader.getController();
+            ListaDomiciliosController controller = loader.getController();
             
             Scene scene = new Scene(root);
             Stage stage = new Stage();
@@ -59,7 +59,7 @@ public class UsuarioController implements Initializable {
             myStage.close();
                     
         } catch (IOException ex) {
-            Logger.getLogger(PaginaprincipalController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ListaDomiciliosController.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }

@@ -1,20 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 
 <AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #1B1B1B;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controller.ListaDomiciliosController">
    <children>
-      <Text fill="WHITE" layoutX="43.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domicilios 1 ">
+      <Text fill="WHITE" layoutX="90.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis domicilios">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="43.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domicilios 2">
+      <Text fill="WHITE" layoutX="115.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mi Domicilio 1">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Volver" fitHeight="35.0" fitWidth="44.0" layoutX="21.0" layoutY="30.0" onMouseClicked="#Inicio" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Flecha.png" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="65.0" layoutY="196.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fx:id="Domicilio1" fitHeight="45.0" fitWidth="44.0" layoutX="43.0" layoutY="174.0" onMouseClicked="#domicilio1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cas.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="115.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administra tu lista de domicilios  #1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="115.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mi Domicilio 2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Circle fill="WHITE" layoutX="65.0" layoutY="320.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fx:id="Domicilio2" fitHeight="45.0" fitWidth="44.0" layoutX="43.0" layoutY="298.0" onMouseClicked="#domicilio2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cas.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="115.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administra tu lista de domicilios  #2">
+         <font>
+            <Font size="14.0" />
          </font>
       </Text>
    </children>
