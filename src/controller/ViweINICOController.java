@@ -17,6 +17,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import principal.BaseController;
 
 /**
  * FXML Controller class
@@ -39,10 +40,10 @@ public class ViweINICOController implements Initializable {
     @FXML
     private void ShowLogin(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewInicio/MiLOGIN.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/principal/base.fxml"));
             Parent root = loader.load();
             
-            ViewLoginController controller = loader.getController();
+            BaseController controller = loader.getController();
             
             Scene scene = new Scene(root);
             Stage stage = new Stage();
@@ -56,7 +57,7 @@ public class ViweINICOController implements Initializable {
             myStage.close();
                     
         } catch (IOException ex) {
-            Logger.getLogger(ViweINICOController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(BaseController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     

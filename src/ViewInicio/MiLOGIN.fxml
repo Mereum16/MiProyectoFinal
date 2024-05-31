@@ -66,12 +66,12 @@
                </font>
             </Button>
             <Text fill="#fffefe" layoutX="39.0" layoutY="801.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No tienes una cuenta? " />
-            <PasswordField layoutX="35.0" layoutY="589.0" onKeyTyped="#eventKey" prefHeight="40.0" prefWidth="234.0" promptText="Ingresa tu contraseña" />
             <Text fx:id="Register" fill="WHITE" layoutX="162.0" layoutY="801.0" onMouseClicked="#Registro" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrate ">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Text>
+            <PasswordField fx:id="contra" layoutX="35.0" layoutY="580.0" prefHeight="40.0" prefWidth="234.0" promptText="ingresa tu clave" />
          </children>
       </AnchorPane>
    </children>

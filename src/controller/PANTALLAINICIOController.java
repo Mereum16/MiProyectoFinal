@@ -20,6 +20,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import principal.LoginController;
 
 /**
  * FXML Controller class
@@ -28,7 +29,7 @@ import javafx.stage.Stage;
  */
 public class PANTALLAINICIOController implements Initializable {
     
-    private ViewLoginController controllerViewLogin;
+    private LoginController controllerLogin;
     private Stage stage;
     @FXML
     private ImageView Lupa;
@@ -218,9 +219,9 @@ public class PANTALLAINICIOController implements Initializable {
     
     
 
-    void initialize(String text, Stage stage, ViewLoginController aThis) {
+    void initialize(String text, Stage stage, LoginController aThis) {
        lblUser.setText(text);
-       this.controllerViewLogin = aThis;
+       this.controllerLogin = aThis;
         this.stage = stage;
         
         
