@@ -61,7 +61,7 @@
                   <Image url="@../images/Rectangle%203.png" />
                </image>
             </ImageView>
-            <Label fx:id="lblUser" layoutX="65.0" layoutY="111.0" text="Name" textFill="WHITE">
+            <Label fx:id="lblUser" disable="true" layoutX="65.0" layoutY="111.0" text="Name" textFill="WHITE" visible="false">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
